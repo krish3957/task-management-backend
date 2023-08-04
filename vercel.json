@@ -1,17 +1,10 @@
 {
-    "version": 2,
-    "name": "task-management",
-    "builds": [
-       { "src": "package.json", 
-       "use": "vercel-sapper" }
-    ],
-    "routes": [
-       { "src": "/(.*)", "destination": "/index.js" }
-    ],
-    "rewrites": [
-      {
-        "src": "/((?!api/.*).*)",
-        "dest": "/index.html"
-      }
+   "version": 2,
+   "name": "task-management",
+   "builds": [
+      { "src": "index.js", "use": "@vercel/node" }
+   ],
+   "routes": [
+      { "src": "/(.*)", "dest": "/index.js" }
    ]
- }
+}
