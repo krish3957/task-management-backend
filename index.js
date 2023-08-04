@@ -7,8 +7,8 @@ const mongoose = require('mongoose');
 const app = express();
 app.use(json());
 app.use(cors());
-const taskRoute = require('./Routes/task');
-const authRoute = require('./Routes/auth');
+const taskRoute = require('./routes/task');
+const authRoute = require('./routes/auth');
 
 app.use(cors());
 app.use(json());
